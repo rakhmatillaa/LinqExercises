@@ -2,14 +2,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        List<string> list = new List<string>();
-        list.Add("abc");
-        list.Add("qwe");
-        list.Add("abc");
-        list.Add("jkl");
-        list.Add("zxc");
-        list.Add("abc");
-        list.Add("jkl");
+        List<string> list = new List() { "abc", "xyz", "klm", "xyz", "abc", "abc", "rst" };
 
         var correctedList = list.Distinct().ToList();
 
@@ -17,6 +10,5 @@ class Program
         {
             Console.WriteLine(item);
         }
-
     }
 }
