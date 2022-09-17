@@ -4,7 +4,6 @@ using System.Collections.Generic;
 
 class Program
 {
-
     static void Main(string[] args)
     {
         List<string> wordList = new List<string>() { "ferry", "car", "plane", "bike", "programming", };
@@ -24,6 +23,7 @@ class Program
         {
             Console.Write(word+" ");
         }
+        
         Console.WriteLine("\n");
 
         foreach(var word in wordList)
@@ -36,7 +36,6 @@ class Program
             {
                 continue;
             }
-            
         }
     }
 }
