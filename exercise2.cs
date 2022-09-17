@@ -7,12 +7,7 @@ class Program
 
     static void Main(string[] args)
     {
-        List<string> wordList = new List<string>();
-        wordList.Add("plane");
-        wordList.Add("ferry");
-        wordList.Add("car");
-        wordList.Add("bike");
-        wordList.Add("programming");
+        List<string> wordList = new List<string>() { "ferry", "car", "plane", "bike", "programming", };
         Console.WriteLine("Words before alphabetical sorting:");
 
         foreach(string word in wordList)
@@ -24,6 +19,7 @@ class Program
         Console.WriteLine("Words after alphabetical sorting:");
 
         wordList.Sort((x, y) => string.Compare(x, y));
+        
         foreach(string word in wordList)
         {
             Console.Write(word+" ");
@@ -40,7 +36,7 @@ class Program
             {
                 continue;
             }
+            
         }
     }
-
 }
