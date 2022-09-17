@@ -11,12 +11,15 @@ class Program
         str = Console.ReadLine();
 
         var output = PrintingUpperCase(str);
+        
         foreach (string u in output)
         {
             Console.WriteLine(u);
         }
+        
         Console.ReadLine();
     }
+    
     static IEnumerable<string> PrintingUpperCase(string mystr)
     {
         var words = mystr.Split(' ')
